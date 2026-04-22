@@ -1,0 +1,602 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-image: url(../images/content/Сова-01\ 1.png);
+    background-repeat: no-repeat;
+    background-position-y: 980px;
+    background-position-x: 315px;
+
+}
+
+.loaded {
+    animation-name: loadAnim;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+
+}
+
+.colorfulBorderBottom {
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #F7941D, #27AAE1)1;
+    animation-name: scaleAnim;
+    animation-timing-function: ease-in;
+    animation-duration: 0.25s;
+    transition: scale 0.25s ease-out;
+    scale: 1.05;
+}
+
+header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+#header__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.header__menu__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 14px;
+}
+
+.header__menu__item__link {
+    transition: .3s transform ease;
+    position: relative;
+    font-weight: 500;
+}
+
+.header__menu__item__link:hover::before {
+    transform: scaleX(1);
+    transition: transform 0.25s;
+    transform-origin: left;
+}
+
+.header__menu__item__link::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, #F7941D, #27AAE1);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.25s;
+}
+
+#cityMenu {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.titleScreen {
+    width: 100%;
+    background-image: url(../images/bg/slider\ 1.png);
+    height: 480px;
+    margin-bottom: 5rem;
+}
+
+.titleScreen__left {
+    background-image: url(../images/bg/Group\ 594.png), url(../images/bg/Rectangle\ 141.png);
+    height: 480px;
+    width: 52.81%;
+    background-size: contain, cover;
+}
+
+.titleScreen__left__content {
+    background-image: url(../images/bg/Group\ 826.png);
+    width: 100%;
+    height: 100%;
+    background-position-x: -50%;
+    background-position-y: 3rem;
+}
+
+.OptionScreen {
+    display: flex;
+    width: 100%;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 354px;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.OptionScreen__Main {
+    width: 50%;
+}
+
+.dialogue {
+    font-size: 16px;
+    background-image: url(../images/content/Union1.png);
+    background-repeat: no-repeat;
+    background-size: 16em;
+    background-position: center center;
+    background-position-y: 5em;
+    background-position-x: 5em;
+    padding: 5%;
+}
+
+.OptionScreen__OptionAge--top {
+    display: flex;
+    flex-direction: row;
+    gap: 15rem;
+    border-bottom: 1px solid #E0E0E0;
+    justify-content: space-between;
+    padding-inline-start: 0;
+
+
+}
+
+.OptionScreen__Option--top__item__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.OptionScreen__OptionAge--top__item {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.OptionScreen__Option--top__item__text--top {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.OptionScreen__Option--top__item__text--bottom {
+    font-size: 12px;
+    color: #4f4f4f;
+    width: 67px;
+}
+
+.OptionScreen__Option--top__item__text {
+    gap: .2rem;
+}
+
+.OptionScreen__OptionDirection {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.OptionScreen__OptionDirection--top {
+    display: flex;
+    gap: .5rem;
+}
+
+.OptionScreen__OptionDirection__button {
+    position: relative;
+    width: auto;
+    height: 54.24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+
+}
+
+.OptionScreen__OptionDirection__button::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    z-index: -1;
+    background: linear-gradient(45deg, #F7941D, #27AAE1);
+    filter: blur(8px);
+    opacity: 0.09;
+    transition: opacity 0.25s ease-in;
+    transition: filter 0.25s ease-in-out;
+}
+
+.OptionScreen__OptionDirection__button:hover::before {
+    transition: opacity 0.25s ease;
+    filter: blur(12px);
+    opacity: 0.3;
+    transform: translateY(10px);
+}
+
+.VideoScreen {
+    padding: 7%;
+    background-image: url(../images/content/Vector.svg), url(../images/content/Vector\ 184.png), url(../images/content/Vector\ 183.svg), url(../images/content/Vector.png);
+    background-repeat: no-repeat;
+    background-position: left top, right top, left 500px, right bottom;
+    margin-bottom: 5rem;
+}
+
+.VideoScreen__img {
+    background-image: url(../images/content/Group\ 779.svg), url(../images/bg/603123.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
+}
+
+.EventsScreen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.EventsScreen__title {
+
+    width: 779.92px;
+    height: 65.86px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin-bottom: 2rem;
+    padding-right: 7%;
+}
+
+.EventsScreen__stats {
+    display: flex;
+    gap: 5rem;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.EventsScreen__stats__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.EventsScreen__stats__item__number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 86px;
+    /* identical to box height */
+    letter-spacing: 0.095em;
+    background-image: linear-gradient(to right, #F7941D, #27AAE1);
+    color: transparent;
+    color: #FFFFFF;
+    background-clip: text;
+    -webkit-text-stroke: 8px transparent;
+    padding: 5%;
+    padding-bottom: 0;
+    white-space: nowrap;
+}
+
+.EventsScreen__stats__item__prefix {
+    width: 250px;
+    height: 52px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding: 5%;
+    padding-top: 0;
+}
+
+.EventsScreen__gridCont1 {
+    display: grid;
+    grid-template-columns: 4fr 3fr 3fr;
+    grid-template-rows: 1fr 1.4fr 1.4fr;
+    gap: 1rem;
+    width: 60%;
+}
+
+
+.EventsScreen__gridCont1__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.orange {
+    display: flex;
+    background-color: #F7BC75;
+    border-radius: 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+    grid-column: span 3;
+    height: 160px;
+}
+
+.card__date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.card__textContent {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card__textContent__title {
+    width: auto;
+    height: 26px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 26px;
+    /* identical to box height, or 72% */
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+
+.card__textContent__text {
+    height: 52px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+
+    display: flex;
+    align-items: center;
+
+    color: #333333;
+}
+
+.card__button {
+    background-color: #F7BC75;
+    color: #000;
+    border: solid;
+    border-radius: 10px;
+    border-color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 30px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    /* identical to box height, or 186% */
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    color: #000000;
+    transition: background-color .3s;
+    color: #000000;
+
+
+}
+
+.blue {
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #C5DDFF;
+    grid-row: span 2;
+    border-radius: 20px;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#monitor {
+    max-width: 77.55px;
+}
+
+.blueButton {
+    background-color: #C5DDFF;
+}
+
+.green {
+    background-color: #B8EFCF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 20px;
+}
+
+.pink {
+    background-color: #FFEEF6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 20px;
+}
+
+.yellow {
+    background-color: #FFE38E;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 20px;
+    padding-right: 10%;
+}
+
+.top {
+    margin-top: 10%;
+}
+
+.smallFont {
+    font-size: 24px;
+}
+
+.card__button:hover {
+    transition: background-color .3s;
+    background-color: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.ReviewScreen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/bg/Group\ 788.png), url(../images/bg/Rectangle\ 128.png);
+    background-size: auto, cover;
+    background-repeat: no-repeat, no-repeat;
+
+}
+
+.ReviewScreen__title {
+    height: 44px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.ReviewScreen__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 20%;
+    margin-bottom: 5rem;
+}
+
+.ReviewScreen__card {
+    background-color: #FFFFFF;
+    padding: 2%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.ReviewScreen__card__header_img {
+    max-height: 40px;
+}
+
+
+.ReviewScreen__card__header {
+    display: flex;
+}
+
+.ReviewScreen__card__header_textContent {
+    display: flex;
+    flex-direction: column;
+    width: 8.5rem;
+    margin-left: 1rem;
+
+}
+
+.ReviewScreen__card__header__title {
+
+    width: 190px;
+    height: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+
+}
+
+.ReviewScreen__card__header__subtitle {
+
+    width: 136px;
+    height: 38px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    /* Gray 2 */
+    color: #4F4F4F;
+}
+
+.ReviewScreen__card__text {
+    width: 240px;
+    height: 185px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+}
+
+
+.hidden {
+    display: none;
+}
+
+@keyframes loadAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleAnim {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.05;
+    }
+}

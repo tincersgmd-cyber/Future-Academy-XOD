@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Acadamy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icons/Group 1 (1).svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header>
+        <img src="images/content/Group 1.png" alt="logo1" id="header__logo">
+        <ul id="header__menu" type="none">
+            <li class="header__menu__item">
+                <img src="images/content/Group 14.png" alt="book" class="header__menu__item__img">
+                <a href="" class="header__menu__item__link">Все курсы</a>
+            </li>
+            <li class="header__menu__item">
+                <a href="" class="header__menu__item__link">Мероприятия</a>
+            </li>
+            <li class="header__menu__item">
+                <a href="" class="header__menu__item__link">Базы знаний</a>
+            </li>
+            <li class="header__menu__item">
+                <a href="" class="header__menu__item__link">Карьера</a>
+            </li>
+            <li class="header__menu__item context">
+                <img src="images/content/Group 830.png" alt="point">
+                <a href="" class="header__menu__item__link" id="cityMenu">Нижний Новгород</a>
+                <img src="images/content/Vector 197.png" alt="arrowDown">
+            </li>
+            <li class="header__menu__item">
+                <span id="phone">8 800 950-33-98</span>
+            </li>
+            <li class="header__menu__item">
+                <img src="images/content/Group 593.png" alt="book" class="header__menu__item__img">
+                <a href="" class="header__menu__item__link">Все курсы</a>
+            </li>
+        </ul>
+    </header>
+    <div class="titleScreen">
+        <div class="titleScreen__left">
+            <div class="titleScreen__left__content"></div>
+        </div>
+    </div>
+    <div class="OptionScreen">
+        <div class="dialogue"> <b>Кем вы хотите стать?</b><br>
+            <br>
+            Пора найти себя <br>
+            и выбрать подходящий <br> курс :) <br>
+            <br>
+            Удачи!
+        </div>
+        <div class="OptionScreen__Main">
+            <div class="OptionScreen__OptionAge">
+                <ul class="OptionScreen__OptionAge--top" type="none">
+                    <li class="OptionScreen__OptionAge--top__item colorfulBorderBottom" id="kidsSwitcher">
+                        <img src="images/content/children.svg" alt="children"
+                            class="OptionScreen__Option--top__item__img">
+                        <div class="OptionScreen__Option--top__item__text">
+                            <span class="OptionScreen__Option--top__item__text--top">Дети</span>
+                            <span class="OptionScreen__Option--top__item__text--bottom">8 — 14 лет</span>
+                        </div>
+                    </li>
+                    <li class="OptionScreen__OptionAge--top__item" id="teensSwitcher">
+                        <img src="images/content/children (1).svg" alt="children1"
+                            class="OptionScreen__Option--top__item__img">
+                        <div class="OptionScreen__Option--top__item__text">
+                            <span class="OptionScreen__Option--top__item__text--top">Подростки</span>
+                            <span class="OptionScreen__Option--top__item__text--bottom">14 — 18 лет</span>
+                        </div>
+                    </li>
+                    <li class="OptionScreen__OptionAge--top__item" id="adultsSwitcher">
+                        <img src="images/content/family.svg" alt="children1"
+                            class="OptionScreen__Option--top__item__img">
+                        <div class="OptionScreen__Option--top__item__text">
+                            <span class="OptionScreen__Option--top__item__text--top">Взрослые</span>
+                            <span class="OptionScreen__Option--top__item__text--bottom">18 — ∞ </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="OptionScreen__OptionDirection" id="kids">
+                <div class="OptionScreen__OptionDirection--top">
+                    <button class="OptionScreen__OptionDirection__button" onclick="">Робототехника</button>
+                    <button class="OptionScreen__OptionDirection__button">Создание игр</button>
+                    <button class="OptionScreen__OptionDirection__button">Web-разработка</button>
+                    <button class="OptionScreen__OptionDirection__button">Мультимедиа</button>
+                    <button class="OptionScreen__OptionDirection__button">Шахматы</button>
+                </div>
+                <div class="OptionScreen__OptionDirection--top">
+                    <button class="OptionScreen__OptionDirection__button">3D-моделирование и дизайн</button>
+                    <button class="OptionScreen__OptionDirection__button">Английский язык</button>
+                    <button class="OptionScreen__OptionDirection__button">Блогинг</button>
+                    <button class="OptionScreen__OptionDirection__button">Soft skills</button>
+                </div>
+            </div>
+            <div class="OptionScreen__OptionDirection hidden" id="teens">
+                <div class="OptionScreen__OptionDirection--top">
+                    <button class="OptionScreen__OptionDirection__button" onclick="">Web-разработка</button>
+                    <button class="OptionScreen__OptionDirection__button">Прикладное Программирование</button>
+                    <button class="OptionScreen__OptionDirection__button">Графическое моделирование</button>
+                    <button class="OptionScreen__OptionDirection__button">Game Development</button>
+                    <button class="OptionScreen__OptionDirection__button">Soft skills</button>
+                </div>
+                <div class="OptionScreen__OptionDirection--top">
+                    <button class="OptionScreen__OptionDirection__button">Разработчик мобильных <br> приложений</button>
+                    <button class="OptionScreen__OptionDirection__button">Блогинг</button>
+                    <button class="OptionScreen__OptionDirection__button">Мультимедиа</button>
+                    <button class="OptionScreen__OptionDirection__button">Программирование</button>
+                </div>
+            </div>
+            <div class="OptionScreen__OptionDirection hidden" id="adults">
+                <div class="OptionScreen__OptionDirection--top">
+                    <button class="OptionScreen__OptionDirection__button" onclick="">Разработчик игр на Unity</button>
+                    <button class="OptionScreen__OptionDirection__button">Разработка ПО</button>
+                    <button class="OptionScreen__OptionDirection__button">Графический дизайн</button>
+                    <button class="OptionScreen__OptionDirection__button">Тестировщик ПО</button>
+                    <button class="OptionScreen__OptionDirection__button">Интернет Маркетинг</button>
+                </div>
+                <div class="OptionScreen__OptionDirection--top">
+                    <button class="OptionScreen__OptionDirection__button">Java-разработчик</button>
+                    <button class="OptionScreen__OptionDirection__button">Python-разработчик</button>
+                    <button class="OptionScreen__OptionDirection__button">IOS-разработчик</button>
+                    <button class="OptionScreen__OptionDirection__button">Программирование</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="VideoScreen">
+        <img src="images/bg/Rectangle 121.png" alt="" class="VideoScreen__img">
+    </div>
+    <div class="EventsScreen">
+        <p class="EventsScreen__title">Актуальные знания от признанных экспертов рынка <br>
+            для новичков и практикующих специалистов.</p>
+        <ul class="EventsScreen__stats" type="none">
+            <li class="EventsScreen__stats__item">
+                <span class="EventsScreen__stats__item__number">600</span>
+                <span class="EventsScreen__stats__item__prefix">Курсов</span>
+            </li>
+            <li class="EventsScreen__stats__item">
+                <span class="EventsScreen__stats__item__number">82</span>
+                <span class="EventsScreen__stats__item__prefix">Ведущих <br> преподавателей</span>
+            </li>
+            <li class="EventsScreen__stats__item">
+                <span class="EventsScreen__stats__item__number">14 795</span>
+                <span class="EventsScreen__stats__item__prefix">Выпускников</span>
+            </li>
+        </ul>
+        <div class="EventsScreen__gridCont1">
+            <div class="EventsScreen__gridCont1__card orange">
+                <div class="card__date">
+                    <img src="images/icons/25.svg" alt="25">
+                    <img src="images/icons/ноября.svg" alt="November">
+                </div>
+                <div class="card__textContent">
+                    <span class="card__textContent__title">День открытых дверей </span>
+                    <p class="card__textContent__text">Приглашаем всех желающих на бесплатную экскурсию <br>
+                        в мир востребованных профессий и полезных навыков</p>
+                </div>
+                <button class="card__button">Записаться <img src="images/content/Vector 137.svg" alt=""></button>
+            </div>
+
+
+            <div class="EventsScreen__gridCont1__card blue">
+                <img src="images/content/monitor.png" alt="monitor" id="monitor">
+                <div class="card__textContent ">
+                    <span class="card__textContent__title blue">Программы обучения</span>
+                    <p class="card__textContent__text top">В списке наших курсов вы сможете найти <br> профессию и
+                        занятие
+                        по
+                        душе,
+                        изучить новое <br> и получить практические знания, которые <br> помогут получить работу
+                        мечты.
+                    </p>
+                </div>
+                <button class="card__button blueButton" id="card2__button">Подробнее <img src="images/content/Vector 137.svg"
+                        alt=""> </button>
+            </div>
+
+
+            <div class="EventsScreen__gridCont2__card green">
+                <img src="images/content/newspaper.png" alt="newspaper">
+                <span class="card__textContent__title smallFont">Новости Академии</span>
+            </div>
+
+            <div class="EventsScreen__gridCont2__card pink">
+                <img src="images/content/diagram.png" alt="diagram">
+                <span class="card__textContent__title smallFont">Мир IT</span>
+            </div>
+
+            <div class="EventsScreen__gridCont2__card yellow">
+                <img src="images/content/Group 837.png" alt="diagram">
+                <div class="card__textContent card2">
+                    <span class="card__textContent__title smallFont">Попробуй!</span>
+                    <p class="card__textContent__text">Пройдите тест и узнайте свои способности <br>
+                        в сфере информационных технологий</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="ReviewScreen">
+        <span class="ReviewScreen__title">Отзывы наших студентов</span>
+        <div class="ReviewScreen__cards">
+            <div class="ReviewScreen__card">
+                <div class="ReviewScreen__card__header">
+                    <img src="images/content/Ellipse 185(5).png" alt="reviewer" class="ReviewScreen__card__header_img">
+                    <div class="ReviewScreen__card__header_textContent">
+                        <span class="ReviewScreen__card__header__title">Имя Фамилия</span>
+                        <p class="ReviewScreen__card__header__subtitle">Студент курса «WEB-разработчик»</p>
+                    </div>
+                </div>
+                <p class="ReviewScreen__card__text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Ut
+                    <br> feugiat
+                    nisl at augue dapibus, id <br> tristique lorem placerat. <br> Curabitur pellentesque est <br>
+                    bibendum urna
+                    facilisis varius. In <br> hac habitasse platea dictumst. In <br> ut dui sodales.
+                </p>
+                <div class="ReviewScreen__card__grade">
+                    <img src="images/content/Star 1.png" alt="Star">
+                    <span class="ReviewScreen__card__grade__text">4,87 / 5</span>
+                </div>
+            </div>
+            <div class="ReviewScreen__card">
+                <div class="ReviewScreen__card__header">
+                    <img src="images/content/Ellipse 185 (1).png" alt="reviewer" class="ReviewScreen__card__header_img">
+                    <div class="ReviewScreen__card__header_textContent">
+                        <span class="ReviewScreen__card__header__title">Имя Фамилия</span>
+                        <p class="ReviewScreen__card__header__subtitle">Студент курса «WEB-разработчик»</p>
+                    </div>
+                </div>
+                <p class="ReviewScreen__card__text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Ut
+                    <br>
+                    feugiat nisl
+                    at augue dapibus, id <br> tristique lorem placerat!
+                </p>
+                <div class="ReviewScreen__card__grade">
+                    <img src="images/content/Star 1.png" alt="Star">
+                    <span class="ReviewScreen__card__grade__text">4,87 / 5</span>
+                </div>
+            </div>
+            <div class="ReviewScreen__card">
+                <div class="ReviewScreen__card__header">
+                    <img src="images/content/Ellipse 185.png" alt="reviewer" class="ReviewScreen__card__header_img">
+                    <div class="ReviewScreen__card__header_textContent">
+                        <span class="ReviewScreen__card__header__title">Имя Фамилия</span>
+                        <p class="ReviewScreen__card__header__subtitle">Студент курса «WEB-разработчик»</p>
+                    </div>
+                </div>
+                <p class="ReviewScreen__card__text">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. Ut <br>
+                    feugiat
+                    nisl at augue dapibus, id <br> tristique lorem placerat. <br> Curabitur pellentesque est <br>
+                    bibendum urna
+                    facilisis varius. In <br> hac habitasse platea dictumst. In <br> ut dui sodales, scelerisque eros
+                    <br> non,
+                    ultrices magna.
+                </p>
+                <div class="ReviewScreen__card__grade">
+                    <img src="images/content/Star 1.png" alt="Star">
+                    <span class="ReviewScreen__card__grade__text">4,87 / 5</span>
+                </div>
+            </div>
+
+            <div class="ReviewScreen__card">
+                <div class="ReviewScreen__card__header">
+                    <img src="images/content/Ellipse 185.png" alt="reviewer" class="ReviewScreen__card__header_img">
+                    <div class="ReviewScreen__card__header_textContent">
+                        <span class="ReviewScreen__card__header__title">Имя Фамилия</span>
+                        <p class="ReviewScreen__card__header__subtitle">Студент курса «WEB-разработчик»</p>
+                    </div>
+                </div>
+                <p class="ReviewScreen__card__text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Ut
+                    <br> feugiat
+                    nisl at augue dapibus, id <br> tristique lorem placerat!
+                </p>
+                <div class="ReviewScreen__card__grade">
+                    <img src="images/content/Star 1.png" alt="Star">
+                    <span class="ReviewScreen__card__grade__text">4,87 / 5</span>
+                </div>
+            </div>
+
+            <div class="ReviewScreen__card">
+                <div class="ReviewScreen__card__header">
+                    <img src="images/content/Ellipse 185 (2).png" alt="reviewer" class="ReviewScreen__card__header_img">
+                    <div class="ReviewScreen__card__header_textContent">
+                        <span class="ReviewScreen__card__header__title">Имя Фамилия</span>
+                        <p class="ReviewScreen__card__header__subtitle">Студент курса «WEB-разработчик»</p>
+                    </div>
+                </div>
+                <p class="ReviewScreen__card__text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Ut
+                    <br> feugiat
+                    nisl at augue dapibus, id <br> tristique lorem placerat. <br> Curabitur pellentesque est <br>
+                    bibendum urna
+                    facilisis varius. In <br> hac habitasse platea dictumst. In <br> ut dui sodales.
+                </p>
+                <div class="ReviewScreen__card__grade">
+                    <img src="images/content/Star 1.png" alt="Star">
+                    <span class="ReviewScreen__card__grade__text">4,87 / 5</span>
+                </div>
+            </div>
+
+            <div class="ReviewScreen__card">
+                <div class="ReviewScreen__card__header">
+                    <img src="images/content/Ellipse 185 (3).png" alt="reviewer" class="ReviewScreen__card__header_img">
+                    <div class="ReviewScreen__card__header_textContent">
+                        <span class="ReviewScreen__card__header__title">Имя Фамилия</span>
+                        <p class="ReviewScreen__card__header__subtitle">Студент курса «WEB-разработчик»</p>
+                    </div>
+                </div>
+                <p class="ReviewScreen__card__text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. Ut
+                    <br> feugiat
+                    nisl at augue dapibus, id <br>tristique lorem placerat. <br> Curabitur pellentesque est <br>
+                    bibendum urna
+                    facilisis varius.
+                </p>
+                <div class="ReviewScreen__card__grade">
+                    <img src="images/content/Star 1.png" alt="Star">
+                    <span class="ReviewScreen__card__grade__text">4,87 / 5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="WelcomeScreen">
+        <h1 class="WelcomeScreen__title">Добро пожаловать в Академию будущего ХОД</h1>
+        <ul class="WelcomeScreen__features" type="none">
+            <li class="WelcomeScreen__features__feature">
+                <img src="images/content/Group 797.png" alt="log" class="WelcomeScreen__features__feature__img">
+                <p class="WelcomeScreen__features__feature__text">Передовой подход <br>
+                    к образовательному <br> процессу</p>
+            </li>
+            <li class="WelcomeScreen__features__feature">
+                <img src="images/content/Group 798.png" alt="log" class="WelcomeScreen__features__feature__img">
+                <p class="WelcomeScreen__features__feature__text">Непрерывное <br> усовершенствование <br>
+                    и пополнение базы курсов</p>
+            </li>
+            <li class="WelcomeScreen__features__feature">
+                <img src="images/content/Group 800.png" alt="log" class="WelcomeScreen__features__feature__img">
+                <p class="WelcomeScreen__features__feature__text">Только практикующие <br> преподавателиу</p>
+            </li>
+            <li class="WelcomeScreen__features__feature">
+                <img src="images/content/Group 801.png" alt="log" class="WelcomeScreen__features__feature__img">
+                <p class="WelcomeScreen__features__feature__text">Сопровождение на всех <br> этапах. От начала обучения
+                    <br> до
+                    трудоустройства
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <form action="makarServ">
+        <div class="form__textContent">
+            <h2 class="form__title">Помочь с выбором?</h2>
+            <p class="form__text">Оставьте заявку и наши специалисты <br> свяжутся с вами, ответят на все вопросы <br>
+                и подберут подходящий вариант <br> обучения.</p>
+        </div>
+        <div class="form__Content">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" placeholder="Ваш телефон" required>
+            <input type="email" name="mail" id="mail" placeholder="Ваш e-mail" required>
+            <p class="form__Content__license">Нажимая на кнопку, я соглашаюсь <br>
+                на обработку персональных данных <br>
+                и с правилами пользования <br> Платформой</p>
+            <button type="submit" class="form__Content__submit">Отправить</button>
+        </div>
+    </form>
+
+    <footer>
+        <div class="info">
+            <img src="images/content/Group 802.png" alt="logo2">
+            <span class="info__phone">8 800 950-33-98 </span>
+            <span class="info__address">г. Москва, ул. Ленина, д. 50</span>
+            <span class="info__email">info@hodfutureacademy.ru</span>
+            <ul type="none" class="info__medias">
+                <li><a href=""><img src="images/icons/.png" alt="vk"></a></li>
+                <li><a href=""><img src="images/icons/.png" alt="zapretgram"></a></li>
+                <li><a href=""><img src="images/icons/.png" alt="zapretbook"></a></li>
+                <li><a href=""><img src="images/icons/.png" alt="zaprettube"></a></li>
+                <li><a href=""><img src="images/icons/.png" alt="zapretgram№2"></a></li>
+            </ul>
+            <span class="info__copyright">© ХОД, Future Academy</span>
+        </div>
+        <ul class="forUsers" type="none">
+            <ul class="forKids" type="none">
+                <li class="forUsers__title">Детям</li>
+                <li class="forUsers__items">Робототехника</li>
+                <li class="forUsers__items">Создание игр</li>
+                <li class="forUsers__items">Программирование</li>
+                <li class="forUsers__items">Мультимедиа</li>
+                <li class="forUsers__items">Soft skills</li>
+                <li class="forUsers__items">Шахматы</li>
+                <li class="forUsers__items">Блогинг</li>
+                <li class="forUsers__items">Создание игр</li>
+                <li class="forUsers__items">Программирование</li>
+                <li class="forUsers__items">Мультимедиа</li>
+                <li class="forUsers__items">Soft skills</li>
+            </ul>
+            <ul class="forTeens" type="none">
+                <li class="forUsers__title">Подросткам</li>
+                <li class="forUsers__items">Web-разработка</li>
+                <li class="forUsers__items">Прикладное Программирование</li>
+                <li class="forUsers__items">Графическое моделирование</li>
+                <li class="forUsers__items">Game Development</li>
+                <li class="forUsers__items">Soft skills</li>
+                <li class="forUsers__items">Разработчик мобильных <br> приложений</li>
+                <li class="forUsers__items">Блогинг</li>
+                <li class="forUsers__items">Создание игр</li>
+                <li class="forUsers__items">Программирование</li>
+                <li class="forUsers__items">Мультимедиа</li>
+                <li class="forUsers__items">Soft skills</li>
+            </ul>
+            <ul class="forAdults" type="none">
+                <li class="forUsers__title">Взрослым</li>
+                <li class="forUsers__items">Разработчик игр на Unity</li>
+                <li class="forUsers__items">Разработка ПО</li>
+                <li class="forUsers__items">Графический дизайн</li>
+                <li class="forUsers__items">Тестировщик ПО</li>
+                <li class="forUsers__items">Интернет Маркетинг</li>
+                <li class="forUsers__items">Java-разработчик</li>
+                <li class="forUsers__items">Python-разработчик</li>
+                <li class="forUsers__items">IOS-разработчик</li>
+                <li class="forUsers__items">Программирование</li>
+            </ul>
+            <ul class="forUsers__info" type="none">
+                <li class="forUsers__title">Информация</li>
+                <li class="forUsers__items">Об академии</li>
+                <li class="forUsers__items">Мероприятия</li>
+                <li class="forUsers__items">Новости</li>
+                <li class="forUsers__items">База знаний</li>
+                <li class="forUsers__items">Карьера</li>
+                <li class="forUsers__items">Контакты</li>
+            </ul>
+        </ul>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
