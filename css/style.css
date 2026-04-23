@@ -502,13 +502,38 @@ a {
 .ReviewScreen__cards {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
     padding-right: 20%;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
+
+}
+
+.ReviewScreen__border {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.ReviewScreen__border--scroll {
+    position: absolute;
+    width: 25%;
+    height: 4px;
+    background-image: linear-gradient(to right, #F7941D, #27AAE1);
+    z-index: 2;
+}
+
+.ReviewScreen__border--general {
+    background-color: #FFFFFF;
+    content: '';
+    width: 100%;
+    height: 2px;
+    margin-bottom: 2rem;
 }
 
 .ReviewScreen__card {
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
     padding: 2%;
     height: auto;
@@ -567,13 +592,73 @@ a {
 
 .ReviewScreen__card__text {
     width: 240px;
-    height: 185px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
     color: #000000;
+}
+
+.WelcomeScreen {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+
+.WelcomeScreen__features {
+    width: 80pc;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0;
+}
+
+.WelcomeScreen__title {
+
+
+    height: 65.86px;
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 34px;
+    /* or 94% */
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+
+}
+
+.WelcomeScreen__features__feature__text {
+    width: 280px;
+    height: 90.73px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+    color: #000000;
+}
+
+form{
+    border-radius: 1.25rem;
+    display: flex;
+    padding: 1%;
+}
+
+form::before{
+    content: '';
+    position: absolute;
+    inset: -100px;
+    z-index: -1;
+    background: linear-gradient(45deg, #F7941D, #27AAE1);
+    filter: blur(20px);
+    opacity: 0.5;
 }
 
 
