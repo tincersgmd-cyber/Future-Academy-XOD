@@ -34,6 +34,7 @@ body {
 }
 
 header {
+    position: sticky;
     display: flex;
     gap: 2rem;
     margin-bottom: 0.5rem;
@@ -86,7 +87,7 @@ header {
     display: none;
     float: none;
     position: absolute;
-    top: 7.5%;
+    top: 5em;
     background-color: #F6F7F9;
     min-width: 11.7%;
     z-index: 2;
@@ -123,6 +124,10 @@ input[type="radio"]:checked{
 a {
     text-decoration: none;
     color: #000000;
+}
+
+.burger-menu{
+    display: none;
 }
 
 .titleScreen {
@@ -898,9 +903,24 @@ footer {
     color: #BDBDBD;
 }
 
+.sticky{
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-top: 0;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    z-index: 3;
+}
+
+
 .hidden {
     display: none;
 }
+
 
 @keyframes loadAnim {
     0% {
@@ -919,5 +939,80 @@ footer {
 
     100% {
         scale: 1.05;
+    }
+}
+
+@keyframes scrollAnim {
+    0%{
+        
+    }
+}
+
+@media screen and (max-width:1440px){
+    body{
+        background-position-x: 200px;
+        background-position-y: 960px;
+    }
+
+    .titleScreen__left__content{
+        background-position-x: 30%;
+    }
+
+    .dialogue{
+        background-position: 3em,1.25em;
+        background-size: 70%;
+    }
+    .OptionScreen{
+        margin-bottom: 10em;
+    }
+
+    .OptionScreen__OptionAge--top{
+        gap: 0;
+    }
+
+    .card__textContent__text{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .card__textContent__title{
+        white-space: nowrap;
+        font-size: 32px;
+    }
+    .EventsScreen__gridCont1__card{
+        gap: 2rem;
+    }
+    .blue{
+        font-size: 24px;
+    }
+    .smallFont{
+        font-size: 20px;
+    }
+    .yellow{
+       padding-left: 2em;
+    }
+
+    form{
+        background-position-x: left, 25%;
+        background-size: 15%, 35%;
+    }
+
+    .info{
+        padding-left: 13%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    header{
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    #header__menu{
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+        width: 5%;
     }
 }
