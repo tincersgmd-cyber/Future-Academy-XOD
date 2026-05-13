@@ -1,4 +1,4 @@
-body {
+* {
     padding: 0;
     margin: 0;
 }
@@ -33,12 +33,22 @@ body {
     scale: 1.05;
 }
 
+.subHeader {
+    width: 100%;
+    height: 1px;
+}
+
 header {
-    position: sticky;
+    position: fixed;
+    top: 0;
     display: flex;
-    gap: 2rem;
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-top: 0;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    z-index: 3;
 }
 
 #header__menu {
@@ -83,7 +93,7 @@ header {
     text-decoration: underline;
 }
 
-.context--dropdown{
+.context--dropdown {
     display: none;
     float: none;
     position: absolute;
@@ -91,29 +101,29 @@ header {
     background-color: #F6F7F9;
     min-width: 11.7%;
     z-index: 2;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
-.dropdown__item{
+.dropdown__item {
     display: flex;
     justify-content: space-between;
 }
 
-.dropdown__item label{
+.dropdown__item label {
     margin-left: 0.5rem;
 }
 
-.context--dropdown input{
+.context--dropdown input {
     float: none;
     color: #000;
     text-align: left;
 }
 
-input[type="radio"]:checked{
+input[type="radio"]:checked {
     background-color: #000;
 }
 
-.context:hover .context--dropdown{
+.context:hover .context--dropdown {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -126,7 +136,7 @@ a {
     color: #000000;
 }
 
-.burger-menu{
+.burger-menu {
     display: none;
 }
 
@@ -134,6 +144,7 @@ a {
     width: 100%;
     background-image: url(../images/bg/slider\ 1.png);
     height: 480px;
+    margin-top: 5rem;
     margin-bottom: 5rem;
 }
 
@@ -903,24 +914,9 @@ footer {
     color: #BDBDBD;
 }
 
-.sticky{
-    position: fixed;
-    top: 0;
-    display: flex;
-    background-color: #FFFFFF;
-    width: 100%;
-    margin-top: 0;
-    justify-content: center;
-    padding-bottom: 0.5rem;
-    padding-top: 1rem;
-    z-index: 3;
-}
-
-
 .hidden {
     display: none;
 }
-
 
 @keyframes loadAnim {
     0% {
@@ -942,77 +938,141 @@ footer {
     }
 }
 
-@keyframes scrollAnim {
-    0%{
-        
-    }
-}
-
-@media screen and (max-width:1440px){
-    body{
+@media screen and (max-width:1440px) {
+    body {
         background-position-x: 200px;
         background-position-y: 960px;
     }
 
-    .titleScreen__left__content{
+    .titleScreen__left__content {
         background-position-x: 30%;
     }
 
-    .dialogue{
-        background-position: 3em,1.25em;
+    .dialogue {
+        background-position: 3em, 1.25em;
         background-size: 70%;
     }
-    .OptionScreen{
+
+    .OptionScreen {
         margin-bottom: 10em;
     }
 
-    .OptionScreen__OptionAge--top{
+    .OptionScreen__OptionAge--top {
         gap: 0;
     }
 
-    .card__textContent__text{
+    .card__textContent__text {
         font-size: 15px;
         line-height: 20px;
     }
-    .card__textContent__title{
+
+    .card__textContent__title {
         white-space: nowrap;
         font-size: 32px;
     }
-    .EventsScreen__gridCont1__card{
+
+    .EventsScreen__gridCont1__card {
         gap: 2rem;
     }
-    .blue{
+
+    .blue {
         font-size: 24px;
     }
-    .smallFont{
+
+    .smallFont {
         font-size: 20px;
     }
-    .yellow{
-       padding-left: 2em;
+
+    .yellow {
+        padding-left: 2em;
     }
 
-    form{
+    form {
         background-position-x: left, 25%;
         background-size: 15%, 35%;
     }
 
-    .info{
+    .info {
         padding-left: 13%;
     }
 }
 
 @media screen and (max-width: 1080px) {
-    header{
-        width: 80%;
-        justify-content: space-between;
+    header {
+        width: 100%;
+        justify-content: space-around;
     }
 
-    #header__menu{
+    #header__menu {
         display: none;
     }
 
-    .burger-menu{
+    .burger-menu {
         display: block;
         width: 5%;
+    }
+
+    .titleScreen {
+        background-position: center;
+    }
+
+    .titleScreen__left {
+        background-position: left;
+    }
+
+    .titleScreen__left__content {
+        background-size: 170%;
+        background-repeat: no-repeat;
+        background-position: -170px;
+    }
+
+    .dialogue {
+        padding-top: 20px;
+    }
+
+    .OptionScreen__OptionAge--top {
+        margin-bottom: 1rem;
+    }
+
+    .OptionScreen__OptionDirection--top {
+        flex-wrap: wrap;
+    }
+
+    .EventsScreen__gridCont1__card{
+        flex-wrap: wrap;
+    }
+
+    .WelcomeScreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .WelcomeScreen__title {
+        font-size: 30px;
+        width: 800px;
+        margin-left: 10%;
+    }
+
+    .WelcomeScreen__features {
+        display: grid;
+        width: 80%;
+        grid-template-columns: 20% 20%;
+        grid-template-rows: 50% 50%;
+        
+    }
+
+    .form__title {
+        font-size: 1.1em;
+        margin-bottom: 1rem;
+    }
+
+    .form__text {
+        font-size: 0.9em;
+
+    }
+
+    .form__textContent {
+        padding-left: 3em;
     }
 }
